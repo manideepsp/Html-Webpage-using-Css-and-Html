@@ -138,9 +138,14 @@ body{
     height: 1re;
 }
 .card-btn{
+    font-weight: bold;
     border:1px solid orange;
     color: #ffd462;
     padding: 5px 15px;
+}
+.card-btn:hover{
+    color:orange;
+    background-color: #ffd462;
 }
 
 .social_facebook, .social_twitter, .social_linkedin{
