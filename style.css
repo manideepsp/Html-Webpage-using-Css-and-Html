@@ -1,5 +1,7 @@
 *{
-
+    margin:0;
+    padding:0;
+    border:0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
@@ -9,56 +11,39 @@ body{
     height: 5px;
     background-color: #666666;
 }
-
-.name h2 {
-color: #6e6a61;
+.logospan{
+    background-color: #ffbf00;
+    margin: 0;
+    border: 0;
+    padding-right: 15%;
+    padding-left:15%;
+    align-content: center;
+    align-content: baseline;
+    overflow: hidden;
 }
-.logo-name {
-position: relative;
+.logospan a{
+    float:left;
+    font-size: 35px;
+    color: #6e6a61;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content:spacearound;
 }
-.name {
-    position: absolute;
-    right: -120px;
-    top: -7px;
+.lsp-item{
+    padding:10px;
+    background-color: inherit;
 }
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.socials{
+    float:right;
+    padding-top: 20px;
+    background-color: inherit;
 }
-.down-arrow {
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    position: relative;
-}
-.one,.two,.three {
-    border-top: 15px solid #ebe5e5;
-    margin-bottom: 10px;
-}
-.one {
-    position: absolute;
-    left: 40%;
-    top: 40%;
-    margin-bottom: 0;
-}
-.three {
-    position: absolute;
-    left: 85%;
-    top: 0%;
-}
-.icons {
-    font-size: 30px;
-}
-.icons .fa-brands:hover {
-    color: #fff;
-}
-.icons .fa-brands {
-    color: rgb(72, 70, 70);
-}
-.icons a {
+.socials a{
     text-decoration: none;
+    font-size: 2em;
+    padding: 3px;
+    width: 30px;
 }
 
 .navbar{
@@ -154,7 +139,18 @@ position: relative;
 }
 .card-btn{
     border:1px solid orange;
+    color: #ffd462;
     padding: 5px 15px;
+}
+
+.social_facebook, .social_twitter, .social_linkedin{
+    color: #6e6a61;
+    text-decoration: none;
+    border-radius: 10%;
+    /*background-color: #666666;*/
+}
+.social_facebook:hover, .social_twitter:hover, .social_linkedin:hover{
+    color:#ffffff;
 }
 .nav-item:hover{
     background-color:#d0c8b1 ;
@@ -194,4 +190,8 @@ position: relative;
 .footer-text-copyright{
     text-align: center;
     font-weight: 600;
+}
+
+.socials a:hover{
+    color: white;
 }
