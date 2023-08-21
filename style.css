@@ -11,6 +11,40 @@ body{
     height: 5px;
     background-color: #666666;
 }
+
+.logo
+{
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent ;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    position: absolute;
+    margin: 0%;
+}
+.logo.second{
+    margin-left: 40px;
+}
+
+.logo-third
+{
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent ;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;  
+    position: absolute;
+    margin: 0%;
+    margin-left:20px;
+    margin-top:10px;
+    display: block;
+}
+.logo-item{
+    display:flex;
+    flex-direction: row;
+    float:left;
+}
+
 .logospan{
     background-color: #ffbf00;
     margin: 0;
@@ -21,19 +55,26 @@ body{
     align-content: baseline;
     overflow: hidden;
 }
-.logospan a{
+.logo-item-logo{
+    padding-top:35px;
+    width:80px;
+}
+.logo-item-text{
     float:left;
     font-size: 35px;
     color: #6e6a61;
     font-weight: 700;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left:10px;
     justify-content:spacearound;
+    display: flex;
 }
-.lsp-item{
-    padding:10px;
-    background-color: inherit;
+
+.logo-item a{
+    font-size: medium;
 }
+
 .socials{
     float:right;
     padding-top: 20px;
@@ -44,6 +85,18 @@ body{
     font-size: 2em;
     padding: 3px;
     width: 30px;
+}
+.social_facebook, .social_twitter, .social_linkedin{
+    color: #6e6a61;
+    text-decoration: none;
+    border-radius: 10%;
+    /*background-color: #666666;*/
+}
+.social_facebook:hover, .social_twitter:hover, .social_linkedin:hover{
+    color:#ffffff;
+}
+.socials a:hover{
+    color: white;
 }
 
 .navbar{
@@ -73,7 +126,6 @@ body{
 .nav-item-left{
     border-left: 1px solid #bdafaf;
 }
-
 .contact-us{
     float: right;
 }
@@ -148,15 +200,6 @@ body{
     background-color: #ffd462;
 }
 
-.social_facebook, .social_twitter, .social_linkedin{
-    color: #6e6a61;
-    text-decoration: none;
-    border-radius: 10%;
-    /*background-color: #666666;*/
-}
-.social_facebook:hover, .social_twitter:hover, .social_linkedin:hover{
-    color:#ffffff;
-}
 .nav-item:hover{
     background-color:#d0c8b1 ;
     color: #b86f17;
@@ -164,12 +207,10 @@ body{
 
 .footer-nav{
     background-color: #666666;
-    height: 50px;
-    display: flex;
-    align-items: center;
+    padding-top:25px;
+    padding-bottom: 25px;
+    text-align:center;
     justify-content: space-between;
-    padding-left: 25%;
-    padding-right:25%;
 }
 .footer-nav-item{
     color: white;
@@ -195,8 +236,4 @@ body{
 .footer-text-copyright{
     text-align: center;
     font-weight: 600;
-}
-
-.socials a:hover{
-    color: white;
 }
